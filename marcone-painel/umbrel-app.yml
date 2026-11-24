@@ -1,0 +1,32 @@
+manifestVersion: 1
+id: marcone-painel
+name: Painel de Controle
+tagline: Vigia as suas mineradoras, com a Leda, assistente de voz
+icon: https://raw.githubusercontent.com/marconecerqueira/Painel-de-Controle/main/minerador/static/icon.svg
+category: bitcoin
+version: "0.1.0"
+port: 8095
+description: >-
+  Painel ao vivo das suas mineradoras de Bitcoin: Antminer com LuxOS, Bitaxe e outras com AxeOS, máquinas
+  vistas só pela pool e aluguéis de hashrate. Mostra o hashrate, a temperatura, as finanças (ganho e custo da
+  energia), os blocos encontrados e o mempool, e avisa no Telegram.
+
+
+  Inclui a Leda, uma assistente de voz: você pergunta (falando ou escrevendo) e ela responde com voz
+  realista, usando os dados do painel. A Leda precisa de uma chave grátis do Google AI Studio.
+
+
+  Depois de instalar, edite o arquivo config.toml na pasta de dados do app com as suas máquinas e reinicie.
+developer: Marcone Cerqueira
+website: https://github.com/marconecerqueira/Painel-de-Controle
+submitter: Marcone Cerqueira
+submission: https://github.com/marconecerqueira/umbrel-loja
+repo: https://github.com/marconecerqueira/Painel-de-Controle
+support: https://github.com/marconecerqueira/Painel-de-Controle/issues
+gallery: []
+releaseNotes: >-
+  Primeira versão para o Umbrel: painel das mineradoras e a Leda.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

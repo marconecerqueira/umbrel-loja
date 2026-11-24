@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      # <id do app>_<serviço>_1 : o app_proxy do Umbrel pede a senha do Umbrel antes de abrir o painel
+      APP_HOST: marcone-painel_web_1
+      APP_PORT: 8080
+
+  web:
+    # Imagem publicada pelo GitHub Actions do repositório do Painel (arm64 para o Raspberry Pi, amd64 para PC).
+    image: ghcr.io/marconecerqueira/painel-de-controle:latest
+    user: "1000:1000"
+    init: true
+    restart: on-failure
+    stop_grace_period: 30s
+    volumes:
+      - ${APP_DATA_DIR}/data:/data   # config.toml (os seus dados e chaves) + banco SQLite; nunca vão para a imagem
